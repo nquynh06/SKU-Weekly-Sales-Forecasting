@@ -23,3 +23,6 @@ venv/
 
 # Environment variables
 .env
+# Model artifacts (Part 9)
+app/models/*.joblib
+app/models/*.pkl
