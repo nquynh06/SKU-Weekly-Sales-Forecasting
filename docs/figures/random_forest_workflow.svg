@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1271.52pt" height="1288.368pt" viewBox="0 0 1271.52 1288.368" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-22T22:15:17.679270</dc:date>
+    <dc:description>Workflow Random Forest dự báo lượng bán SKU–tuần; không phải kết quả benchmark.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 1288.368
+L 1271.52 1288.368
+L 1271.52 0
+L -0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 43.65648 1058.2236
+L 611.87472 1058.2236
+Q 626.96016 1058.2236 626.96016 1042.935984
+L 626.96016 484.938
+Q 626.96016 469.650384 611.87472 469.650384
+L 43.65648 469.650384
+Q 28.57104 469.650384 28.57104 484.938
+L 28.57104 1042.935984
+Q 28.57104 1058.2236 43.65648 1058.2236
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 659.64528 1058.2236
+L 1227.86352 1058.2236
+Q 1242.94896 1058.2236 1242.94896 1042.935984
+L 1242.94896 484.938
+Q 1242.94896 469.650384 1227.86352 469.650384
+L 659.64528 469.650384
+Q 644.55984 469.650384 644.55984 484.938
+L 644.55984 1042.935984
+Q 644.55984 1058.2236 659.64528 1058.2236
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 633.803423 198.054776
+Q 598.047929 205.301714 564.264792 212.148894
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 571.604665 214.130378
+L 564.264792 212.148894
+L 570.253903 207.465887
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 938.212606 265.815504
+Q 946.897473 265.815504 953.569878 265.815504
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #e11d48; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 946.769878 262.415504
+L 953.569878 265.815504
+L 946.769878 269.215504
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #e11d48; stroke: #e11d48; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 562.270962 319.159843
+Q 598.044389 327.920951 631.863121 336.203345
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 626.067088 331.283385
+L 631.863121 336.203345
+L 624.449533 337.888196
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 633.762661 454.445385
+Q 481.760993 460.732683 331.770067 466.93681
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 338.704772 470.052875
+L 331.770067 466.93681
+L 338.423742 463.258684
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 327.7656 516.065617
+Q 327.7656 515.789424 327.7656 517.525693
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 324.3656 524.325693
+L 327.7656 517.525693
+L 331.1656 524.325693
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 637.757339 454.445385
+Q 789.759007 460.732683 939.749933 466.93681
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 933.096258 463.258684
+L 939.749933 466.93681
+L 932.815228 470.052875
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 943.7544 516.065617
+Q 943.7544 515.789424 943.7544 517.525693
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 940.3544 524.325693
+L 943.7544 517.525693
+L 947.1544 524.325693
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 327.7656 624.528005
+Q 327.7656 636.541762 327.7656 646.543057
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 331.1656 639.743057
+L 327.7656 646.543057
+L 324.3656 639.743057
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 327.7656 759.568613
+Q 327.7656 771.58237 327.7656 781.583665
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 331.1656 774.783665
+L 327.7656 781.583665
+L 324.3656 774.783665
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 327.7656 894.604556
+Q 327.7656 907.894296 327.7656 919.171575
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 331.1656 912.371575
+L 327.7656 919.171575
+L 324.3656 912.371575
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 943.7544 624.528005
+Q 943.7544 636.541762 943.7544 646.543057
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 947.1544 639.743057
+L 943.7544 646.543057
+L 940.3544 639.743057
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 943.7544 759.568613
+Q 943.7544 771.58237 943.7544 781.583665
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 947.1544 774.783665
+L 943.7544 781.583665
+L 940.3544 774.783665
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 943.7544 894.604556
+Q 943.7544 907.894296 943.7544 919.171575
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 947.1544 912.371575
+L 943.7544 919.171575
+L 940.3544 912.371575
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #64748b; stroke: #64748b; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 599.362835 837.105349
+Q 603.797099 695.433372 670.303793 572.547365
+" clip-path="url(#p68b0b4ec07)" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #4f46e5; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 664.077027 576.909404
+L 670.303793 572.547365
+L 670.057365 580.146001
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #4f46e5; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #4f46e5; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="635.76" y="42.871104" transform="rotate(-0 635.76 42.871104)">RANDOM FOREST · DỰ BÁO LƯỢNG BÁN SKU–TUẦN</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13.1px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #475569" x="635.76" y="73.446336" transform="rotate(-0 635.76 73.446336)">Cuối tuần t → đúng tuần t+1  |  H=1  |  Gross completed units  |  Luồng local cần duyệt giả định</text>
+   </g>
+   <g id="patch_18">
+    <path d="M 195.768 197.658216
+L 1075.752 197.658216
+Q 1087.06608 197.658216 1087.06608 186.192504
+L 1087.06608 103.384584
+Q 1087.06608 91.918872 1075.752 91.918872
+L 195.768 91.918872
+Q 184.45392 91.918872 184.45392 103.384584
+L 184.45392 186.192504
+Q 184.45392 197.658216 195.768 197.658216
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #e0f2fe; stroke: #0284c7; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 195.768 318.685176
+L 924.8976 318.685176
+Q 936.21168 318.685176 936.21168 307.219464
+L 936.21168 224.411544
+Q 936.21168 212.945832 924.8976 212.945832
+L 195.768 212.945832
+Q 184.45392 212.945832 184.45392 224.411544
+L 184.45392 307.219464
+Q 184.45392 318.685176 195.768 318.685176
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #fef3c7; stroke: #d97706; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 968.8968 318.685176
+L 1220.3208 318.685176
+Q 1231.63488 318.685176 1231.63488 307.219464
+L 1231.63488 224.411544
+Q 1231.63488 212.945832 1220.3208 212.945832
+L 968.8968 212.945832
+Q 957.58272 212.945832 957.58272 224.411544
+L 957.58272 307.219464
+Q 957.58272 318.685176 968.8968 318.685176
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #fff1f2; stroke: #e11d48; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 120.3408 454.362768
+L 1151.1792 454.362768
+Q 1162.49328 454.362768 1162.49328 442.897056
+L 1162.49328 348.623424
+Q 1162.49328 337.157712 1151.1792 337.157712
+L 120.3408 337.157712
+Q 109.02672 337.157712 109.02672 348.623424
+L 109.02672 442.897056
+Q 109.02672 454.362768 120.3408 454.362768
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #e0f2fe; stroke: #0284c7; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #3730a3" x="327.7656" y="496.403712" transform="rotate(-0 327.7656 496.403712)">A. run · HUẤN LUYỆN / ĐÁNH GIÁ</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #166534" x="943.7544" y="496.403712" transform="rotate(-0 943.7544 496.403712)">B. predict · NẠP MODEL ĐÃ LƯU</text>
+   </g>
+   <g id="patch_22">
+    <path d="M 67.54176 622.526544
+L 587.98944 622.526544
+Q 599.30352 622.526544 599.30352 611.060832
+L 599.30352 526.978944
+Q 599.30352 515.513232 587.98944 515.513232
+L 67.54176 515.513232
+Q 56.22768 515.513232 56.22768 526.978944
+L 56.22768 611.060832
+Q 56.22768 622.526544 67.54176 622.526544
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #e0e7ff; stroke: #4f46e5; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 67.54176 757.567152
+L 587.98944 757.567152
+Q 599.30352 757.567152 599.30352 746.10144
+L 599.30352 662.019552
+Q 599.30352 650.55384 587.98944 650.55384
+L 67.54176 650.55384
+Q 56.22768 650.55384 56.22768 662.019552
+L 56.22768 746.10144
+Q 56.22768 757.567152 67.54176 757.567152
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #e0e7ff; stroke: #4f46e5; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 67.54176 892.60776
+L 587.98944 892.60776
+Q 599.30352 892.60776 599.30352 881.142048
+L 599.30352 797.06016
+Q 599.30352 785.594448 587.98944 785.594448
+L 67.54176 785.594448
+Q 56.22768 785.594448 56.22768 797.06016
+L 56.22768 881.142048
+Q 56.22768 892.60776 67.54176 892.60776
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #e0e7ff; stroke: #4f46e5; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 67.54176 1035.292176
+L 587.98944 1035.292176
+Q 599.30352 1035.292176 599.30352 1023.826464
+L 599.30352 934.648704
+Q 599.30352 923.182992 587.98944 923.182992
+L 67.54176 923.182992
+Q 56.22768 923.182992 56.22768 934.648704
+L 56.22768 1023.826464
+Q 56.22768 1035.292176 67.54176 1035.292176
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #dcfce7; stroke: #16a34a; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 683.53056 622.526544
+L 1203.97824 622.526544
+Q 1215.29232 622.526544 1215.29232 611.060832
+L 1215.29232 526.978944
+Q 1215.29232 515.513232 1203.97824 515.513232
+L 683.53056 515.513232
+Q 672.21648 515.513232 672.21648 526.978944
+L 672.21648 611.060832
+Q 672.21648 622.526544 683.53056 622.526544
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #dcfce7; stroke: #16a34a; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 683.53056 757.567152
+L 1203.97824 757.567152
+Q 1215.29232 757.567152 1215.29232 746.10144
+L 1215.29232 662.019552
+Q 1215.29232 650.55384 1203.97824 650.55384
+L 683.53056 650.55384
+Q 672.21648 650.55384 672.21648 662.019552
+L 672.21648 746.10144
+Q 672.21648 757.567152 683.53056 757.567152
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #fef3c7; stroke: #d97706; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 683.53056 892.60776
+L 1203.97824 892.60776
+Q 1215.29232 892.60776 1215.29232 881.142048
+L 1215.29232 797.06016
+Q 1215.29232 785.594448 1203.97824 785.594448
+L 683.53056 785.594448
+Q 672.21648 785.594448 672.21648 797.06016
+L 672.21648 881.142048
+Q 672.21648 892.60776 683.53056 892.60776
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #dcfce7; stroke: #16a34a; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 683.53056 1035.292176
+L 1203.97824 1035.292176
+Q 1215.29232 1035.292176 1215.29232 1023.826464
+L 1215.29232 934.648704
+Q 1215.29232 923.182992 1203.97824 923.182992
+L 683.53056 923.182992
+Q 672.21648 923.182992 672.21648 934.648704
+L 672.21648 1023.826464
+Q 672.21648 1035.292176 683.53056 1035.292176
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #dcfce7; stroke: #16a34a; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 51.1992 1215.558648
+L 1220.3208 1215.558648
+Q 1231.63488 1215.558648 1231.63488 1204.092936
+L 1231.63488 1095.805656
+Q 1231.63488 1084.339944 1220.3208 1084.339944
+L 51.1992 1084.339944
+Q 39.88512 1084.339944 39.88512 1095.805656
+L 39.88512 1204.092936
+Q 39.88512 1215.558648 51.1992 1215.558648
+z
+" clip-path="url(#p68b0b4ec07)" style="fill: #fff1f2; stroke: #e11d48; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #475569" x="635.76" y="1246.770864" transform="rotate(-0 635.76 1246.770864)">Tài liệu tham chiếu: docs/random_forest_pipeline.md  •  Nguồn quy trình: random_forest_workflow.mmd</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="635.76" y="127.056022" transform="rotate(-0 635.76 127.056022)">1. SNAPSHOT NGUỒN CSV</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(419.31293 150.366276)">SalesOrders · SalesOrderLines · ProductVariants; WeeklyCoverage tùy chọn</text>
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(456.625039 166.160807)">Không join giá, khuyến mãi, tồn kho, khách hàng hoặc returns</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="560.3328" y="247.232919" transform="rotate(-0 560.3328 247.232919)">2. QUALITY GATE + LOG TRUY NGUYÊN</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(417.308738 271.393236)">Khóa / duplicate · FK · Quantity · trạng thái · ngày</text>
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(383.906628 287.350384)">Lỗi cứng: từ chối; loại trừ hợp lệ và giả định phải được ghi log</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="1094.6088" y="248.178247" transform="rotate(-0 1094.6088 248.178247)">DỪNG KHI LỖI CỨNG</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(1032.738753 271.522392)">DQ / failure diagnostics</text>
+    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(1039.296675 286.044392)">Không ép tạo dự báo</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="635.76" y="374.016459" transform="rotate(-0 635.76 374.016459)">3. PANEL VÀ ĐẶC TRƯNG ĐÚNG CUTOFF</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(443.785469 394.951357)">Thứ Hai; cohort từ first sale ≤ origin, không nhìn last sale tương lai</text>
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(470.053086 410.920185)">Nguồn đủ: tuần vắng = 0; nguồn thiếu = NaN; không bfill</text>
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(461.596094 426.270888)">Lag 1/2/4/8 · rolling 4/8 · zero-rate · age · calendar tuần đích</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="327.7656" y="548.957819" transform="rotate(-0 327.7656 548.957819)">4A. SPLIT THEO TARGET_WEEK</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(199.154116 567.570886)">Train → 3 block validation mở rộng → test khóa</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(195.107319 582.620261)">2 ứng viên RF; chọn WAPE (MAE nếu actual = 0)</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(226.103256 598.694011)">One-hot SKU chỉ fit trên train mỗi lần</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="327.7656" y="685.1212" transform="rotate(-0 327.7656 685.1212)">5A. TEST ĐỘC LẬP, CÙNG KEYS</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(193.430678 702.827198)">Một fit qua validation_end, không tune bằng test</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(220.033491 717.678916)">RF + MA4 + naïve; MAE / RMSE / WAPE</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(210.264975 732.035635)">Macro-SKU MAE · bias · coverage / fallback</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="327.7656" y="821.273589" transform="rotate(-0 327.7656 821.273589)">6A. REFIT ĐỂ DEPLOY, SAU ĐÁNH GIÁ</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(218.302709 837.851477)">Cấu hình đã chọn; fit đến cuối snapshot</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(215.468491 852.226243)">Saved preprocessing + forest + contract</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(187.291303 867.639134)">Không xem model deploy là model chấm điểm test</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="327.7656" y="958.871444" transform="rotate(-0 327.7656 958.871444)">7A. ARTIFACTS / TRUY NGUYÊN</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10.9px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(202.915467 978.231634)">model.joblib · manifest · DQ · weekly/features</text>
+    <text style="font-size: 10.9px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(227.587787 992.946634)">Validation / test predictions · metrics</text>
+    <text style="font-size: 10.9px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(184.747381 1008.300306)">Feature importance; không mặc định thắng baseline</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="943.7544" y="550.080592" transform="rotate(-0 943.7544 550.080592)">4B. NẠP ARTIFACT ĐÁNG TIN CẬY</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(841.27565 567.770261)">Saved model + snapshot đến origin t</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(845.348228 583.253621)">Đối chiếu cutoff / contract / schema</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(844.211275 597.215027)">Không dùng artifact đã fit sau origin</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="943.7544" y="685.1212" transform="rotate(-0 943.7544 685.1212)">5B. TẠO FEATURE CÙNG CODE run</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 10.9px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(823.098212 703.136213)">Đủ 8 tuần liên tục known → RF, kể cả SKU lạ</text>
+    <text style="font-size: 10.9px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(839.835673 717.796713)">Ngắn / gappy → MA4 trên known last4</text>
+    <text style="font-size: 10.9px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(809.161541 732.34651)">Không tuần known nào → unavailable, qhat trống</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="943.7544" y="821.011871" transform="rotate(-0 943.7544 821.011871)">6B. XUẤT FORECAST + TRẠNG THÁI</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(804.875681 837.440868)">SKU_ID · origin · target · qhat + 2 baseline columns</text>
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(810.133087 852.020868)">model / run · status · reason · as_of = origin + 7d</text>
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(803.65815 867.021899)">Cutoff event-time exclusive, không phải ingest time</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="943.7544" y="959.528882" transform="rotate(-0 943.7544 959.528882)">7B. RÀ SOÁT NGHIỆP VỤ / BI Ở BƯỚC SAU</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(803.717525 978.687118)">Người phụ trách kiểm lịch sử, chất lượng, kế hoạch</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(830.449244 993.45204)">Không tự ra đơn mua hoặc tối ưu tồn kho</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(837.418775 1009.367665)">Đối chiếu actual khi tuần đích kết thúc</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 13.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f172a" x="635.76" y="1125.082553" transform="rotate(-0 635.76 1125.082553)">RANH GIỚI VÀ GIẢ ĐỊNH CẦN PHÊ DUYỆT</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(385.486875 1150.57627)">Observed sales ≠ nhu cầu không bị giới hạn tồn kho; gross units không trừ returns.</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(346.749375 1166.555957)">Feed đủ / snapshot status / cohort / ngưỡng local chưa được chứng minh hoặc duyệt thay nhóm.</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #0f172a" transform="translate(328.999687 1182.973457)">Không random split · không leakage · không gán missing thành zero · không tự tuyên bố cải thiện KPI.</text>
+   </g>
+   <g id="text_32">
+    <g id="patch_31">
+     <path d="M 621.504709 672.67435
+L 655.043771 672.67435
+L 655.043771 646.268882
+L 621.504709 646.268882
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #4f46e5" transform="translate(623.395334 656.068296)">saved</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #4f46e5" transform="translate(622.704709 668.07103)">model</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p68b0b4ec07">
+   <rect x="7.2" y="7.2" width="1257.12" height="1273.968"/>
+  </clipPath>
+ </defs>
+</svg>
