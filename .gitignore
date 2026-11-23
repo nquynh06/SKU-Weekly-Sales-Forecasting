@@ -1,25 +1,32 @@
-# Data
-data/
+# Raw & processed data
+/data/
+/src/data/raw/
+/src/data/processed/
 *.csv
 *.parquet
+
+# Generated outputs
+/deliverables/
+/reports/tables/
+/reports/figures/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables
+.env
 
 # Model artifacts
 *.pkl
 *.joblib
 *.h5
 
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-
-# Notebook
-.ipynb_checkpoints/
-
 # IDE
 .vscode/
 .idea/
-
-# Environment variables
-.env
