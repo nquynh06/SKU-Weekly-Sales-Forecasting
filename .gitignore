@@ -35,6 +35,9 @@ venv/
 
 # Environment variables
 .env
+# Model artifacts (Part 9)
+app/models/*.joblib
+app/models/*.pkl
 
 # Local RF datasets, predictions, run manifests and trusted model bundles
 reports/random_forest/
