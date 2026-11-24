@@ -1,0 +1,56 @@
+flowchart TB
+    INPUT["Snapshot nguồn CSV<br/>SalesOrders + SalesOrderLines + ProductVariants<br/>WeeklyCoverage tùy chọn; không join giá/promo/tồn kho"]
+    DQ{"Quality gate<br/>Khóa · FK · Quantity · trạng thái · ngày"}
+    FAIL["Dừng khi lỗi cứng<br/>DQ/failure diagnostics<br/>Không tạo dự báo hợp lệ giả"]
+    PANEL["Panel SKU–tuần, thứ Hai<br/>Cohort chỉ từ first sale ≤ origin<br/>Nguồn đủ: tuần vắng = 0; nguồn thiếu = NaN"]
+    FEATURES["Đặc trưng tại cuối tuần t → đích t+1<br/>lag 1/2/4/8 · rolling 4/8 · zero-rate · age · calendar<br/>RF cần 8 tuần liên tục biết được; không bfill"]
+    INPUT --> DQ
+    DQ -- "lỗi cứng" --> FAIL
+    DQ -- "đạt; log loại trừ/giả định" --> PANEL --> FEATURES
+
+    subgraph OFFLINE["A. run — huấn luyện và đánh giá theo thời gian"]
+        direction TB
+        SPLIT["Train → 3 block validation mở rộng → test khóa<br/>Không random split; không tune bằng test"]
+        SELECT["2 ứng viên Random Forest<br/>Chọn bằng validation WAPE; MAE nếu tổng actual = 0<br/>One-hot SKU chỉ fit trên train mỗi lần"]
+        TEST["Fit một lần qua validation_end<br/>Test độc lập: RF + MA4 + naïve cùng keys<br/>Báo lỗi, bias, macro-SKU và coverage"]
+        REFIT["Refit cấu hình đã chọn tới cuối snapshot<br/>Không gọi đây là điểm test của model deploy"]
+        SAVE[("model.joblib<br/>preprocessor + forest + feature/config metadata")]
+        REPORTS["Artifacts kiểm toán<br/>DQ · weekly panel · features · predictions<br/>metrics · feature importance · run manifest"]
+        SPLIT --> SELECT --> TEST --> REFIT --> SAVE
+        TEST --> REPORTS
+    end
+    FEATURES --> SPLIT
+
+    subgraph SERVE["B. predict — model đã lưu, không train lại"]
+        direction TB
+        LOAD["Nạp artifact đáng tin cậy + snapshot đến origin t<br/>Đối chiếu contract, cutoff và schema"]
+        SAME["Dùng lại data/feature code của run<br/>Không đưa actual t+1 vào X<br/>Không dùng artifact fit sau origin"]
+        ROUTE{"Đủ min_history tuần liên tục known?<br/>SKU lạ vẫn RF, có cờ chưa thấy khi train"}
+        RF["Dự báo RF không âm"]
+        FALLBACK["MA4 trên các tuần biết được trong 4 tuần cuối<br/>Không có tuần nào → unavailable, qhat trống"]
+        FORECAST["forecast.csv + DQ/manifest<br/>SKU_ID · origin · target · qhat · baseline columns<br/>model/run · status · reason · as_of = origin+7d exclusive"]
+        REVIEW["Người lập kế hoạch rà soát / BI ở bước sau<br/>Không tự đặt hàng; không khẳng định nhu cầu vô hạn"]
+        LOAD --> SAME --> ROUTE
+        ROUTE -- "đủ" --> RF --> FORECAST
+        ROUTE -- "thiếu/ngắn/gappy" --> FALLBACK --> FORECAST
+        FORECAST --> REVIEW
+    end
+    SAVE --> LOAD
+    FEATURES -. "code dùng chung; snapshot mới phải qua DQ" .-> SAME
+
+    NOTE["Ràng buộc: H=1 · gross completed units · observed sales, không net returns<br/>Feed-completeness / trạng thái snapshot / tham số local là giả định cần duyệt<br/>Kết quả không mặc định thắng baseline; actual chỉ dùng sau tuần đích"]
+    REPORTS --> NOTE
+    REVIEW --> NOTE
+
+    classDef input fill:#e0f2fe,stroke:#0284c7,color:#0f172a;
+    classDef gate fill:#fef3c7,stroke:#d97706,color:#0f172a;
+    classDef model fill:#e0e7ff,stroke:#4f46e5,color:#0f172a;
+    classDef output fill:#dcfce7,stroke:#16a34a,color:#0f172a;
+    classDef warning fill:#fee2e2,stroke:#dc2626,color:#7f1d1d;
+    class INPUT,PANEL,FEATURES,SAME input;
+    class DQ,ROUTE,FALLBACK gate;
+    class SPLIT,SELECT,TEST,REFIT,SAVE,LOAD,RF model;
+    class REPORTS,FORECAST,REVIEW output;
+    class FAIL,NOTE warning;
+    style OFFLINE fill:#f8fafc,stroke:#94a3b8
+    style SERVE fill:#f8fafc,stroke:#94a3b8

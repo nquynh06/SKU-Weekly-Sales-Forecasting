@@ -38,6 +38,8 @@ sku-weekly-sales-forecasting/
 │
 ├── configs/
 ├── notebooks/
+├── models/
+│   └── random forest/       # Implemented standalone quantity H=1 pipeline
 ├── src/
 │   ├── data/
 │   ├── quality/
@@ -99,3 +101,30 @@ Large datasets and model artifacts are not stored in this repository.
 ## 7. Project Status
 
 **Status:** In Progress
+
+## 8. Random Forest pipeline
+
+The implemented RF pipeline lives in [models/random forest](<models/random forest/README.md>)
+as requested for this model assignment. The broader structure above remains the project plan;
+this implementation does not silently relocate or replace other models under `src/models/`.
+
+- [Pipeline documentation: input tables, label rules, features, evaluation and outputs](<docs/random_forest_pipeline.md>)
+- [Workflow diagram](<docs/figures/random_forest_workflow.svg>)
+- [Local verification results and review checklist](<docs/random_forest_review.md>)
+
+Run from the repository root (quote the path containing a space):
+
+```bash
+python "models/random forest/run.py" run \
+  --config "models/random forest/configs/random_forest.json" \
+  --data-dir /path/to/raw \
+  --output-dir reports/random_forest/my_run
+```
+
+The target is **gross completed sales units per SKU in the next calendar week (H=1)**,
+not revenue, price or unconstrained demand. Raw CSV files stay outside Git.
+The local config explicitly assumes complete weekly feeds if no coverage table is supplied;
+this is an unverified assumption awaiting group review, not a data-quality finding.
+The implementation is prepared on `feat/random-forest-weekly-pipeline` for a pull request
+into `main`. GitHub publication and the secretary's review are tracked separately;
+the pipeline does not push, merge, or request reviews automatically.

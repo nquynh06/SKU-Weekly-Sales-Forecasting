@@ -12,6 +12,7 @@ data/
 __pycache__/
 *.py[cod]
 .venv/
+.venv-rf/
 venv/
 
 # Notebook
@@ -23,3 +24,8 @@ venv/
 
 # Environment variables
 .env
+
+# Local RF datasets, predictions, run manifests and trusted model bundles
+reports/random_forest/
+.matplotlib/
+.pytest_cache/
