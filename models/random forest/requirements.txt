@@ -1,0 +1,9 @@
+# Tested local run: Python 3.12.14; exact installed versions in run_manifest.json.
+# Recreate the tested RF environment without installing unrelated project tools.
+pandas==3.1.1
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+# Optional only for regenerating the workflow figure:
+matplotlib==3.11.2
+# Tests use the Python standard-library unittest runner (no pytest required).

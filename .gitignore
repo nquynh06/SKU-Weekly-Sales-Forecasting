@@ -1,24 +1,36 @@
-# Data
-data/
+# Raw & processed data
+/data/
+/src/data/raw/
+/src/data/processed/
 *.csv
 *.parquet
+
+# Generated outputs
+/deliverables/
+/reports/tables/
+/reports/figures/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environment
+.venv/
+.venv-rf/
+venv/
+
+# Environment variables
+.env
 
 # Model artifacts
 *.pkl
 *.joblib
 *.h5
 
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-
-# Notebook
-.ipynb_checkpoints/
-
 # IDE
 .vscode/
+.idea/
 .idea/
 
 # Environment variables
@@ -26,3 +38,8 @@ venv/
 # Model artifacts (Part 9)
 app/models/*.joblib
 app/models/*.pkl
+
+# Local RF datasets, predictions, run manifests and trusted model bundles
+reports/random_forest/
+.matplotlib/
+.pytest_cache/
