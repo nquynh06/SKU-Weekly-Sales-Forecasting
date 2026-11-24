@@ -1,0 +1,15 @@
+{
+  "data_start_week": "2023-07-03",
+  "data_end_week": "2025-12-22",
+  "train_end_week": "2025-03-24",
+  "validation_end_week": "2025-08-04",
+  "assume_complete_weeks": true,
+  "min_history_weeks": 8,
+  "validation_blocks": 3,
+  "random_state": 317,
+  "n_jobs": -1,
+  "candidates": [
+    {"n_estimators": 80, "max_depth": 10, "min_samples_leaf": 5, "max_features": 0.8},
+    {"n_estimators": 80, "max_depth": 14, "min_samples_leaf": 5, "max_features": 0.8}
+  ]
+}
