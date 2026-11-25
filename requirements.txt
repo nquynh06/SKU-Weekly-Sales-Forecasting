@@ -3,6 +3,7 @@ numpy
 scikit-learn
 matplotlib
 seaborn
+openpyxl
 pyyaml
 joblib
 jupyter

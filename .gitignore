@@ -1,10 +1,3 @@
-# Raw & processed data
-/data/
-/src/data/raw/
-/src/data/processed/
-*.csv
-*.parquet
-
 # Generated outputs
 /deliverables/
 /reports/tables/
@@ -41,5 +34,12 @@ app/models/*.pkl
 
 # Local RF datasets, predictions, run manifests and trusted model bundles
 reports/random_forest/
+
+# Lab data artifacts: keep source code and reports, not large local datasets
+/data/raw/
+/data/processed/
+
+# Optional: ignore notebook-generated Excel workbooks
+/reports/*.xlsx
 .matplotlib/
 .pytest_cache/

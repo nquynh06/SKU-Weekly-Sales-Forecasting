@@ -112,6 +112,86 @@ this implementation does not silently relocate or replace other models under `sr
 - [Workflow diagram](<docs/figures/random_forest_workflow.svg>)
 - [Local verification results and review checklist](<docs/random_forest_review.md>)
 
+## 9. Reproducing Lab 1–4 data outputs
+
+Raw and processed datasets are intentionally excluded from Git. After cloning,
+download the 27 source CSV files into `data/raw/`, create the Python environment,
+and run the notebooks in order:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m pip install jupyter
+code .
+```
+
+In VS Code, select the `.venv` kernel and run:
+
+1. `data/notebooks/00_data_collection.ipynb`
+2. `data/notebooks/01_data_understanding.ipynb`
+3. `data/notebooks/02_data_quality_assessment.ipynb`
+4. `data/notebooks/03_data_preprocessing.ipynb`
+
+This recreates:
+
+- `reports/data_inventory.xlsx`
+- `reports/relationship_candidates.xlsx`
+- `reports/data_understanding_report.xlsx`
+- `reports/data_quality_report.xlsx`
+- `reports/preprocessing_report.xlsx`
+- `plots/*.png`
+- `data/processed/*_cleaned.csv`
+- `data/processed/joined_sales_data.csv`
+- duplicate and negative-quantity quarantine folders
+
+## 10. Controlled preprocessing
+
+The repository also provides a reproducible preprocessing entry point that
+reports missing values, exact duplicates, IQR outliers and join-key conflicts
+without silently imputing or deleting uncertain records:
+
+```powershell
+python src/data/preprocess_lab.py --raw-dir data/raw --processed-dir data/processed --report-dir reports/tables
+```
+
+Outputs include `missing_values_report.csv`, `inconsistency_report.csv`,
+`join_log.csv`, cleaned per-table CSVs and quarantine folders.
+
+Current invariant results:
+
+- 556,094 valid completed sales lines.
+- 23,478 canceled-order lines excluded and listed in `excluded_sales_lines.csv`.
+- 845 duplicate order rows removed before cleaning.
+- No surviving non-completed status, nonpositive Quantity or duplicate line ID.
+
+## 11. Recommended rerun order after cloning
+
+The repository does not track raw or processed datasets. A new clone should
+restore/download `data/raw/27-CSV-snapshot` first.
+
+Minimal order:
+
+1. Install dependencies and restore 27 raw CSV files.
+2. Run the 4 Lab notebooks only when reports, plots or notebook outputs are needed.
+3. Run `src/data/audit_sources.py` to confirm source structure and relationships.
+4. Run `src/data/clean_transactions.py` to create the clean Silver transaction file.
+5. Run `src/data/preprocess_lab.py` for the notebook-compatible inventory, quarantine and join reports.
+6. Run `src/data/sku_lifecycle.py` and `src/data/build_ground_truth.py` for the SKU-week Gold data.
+7. Run quality, EDA and validation scripts for the final evidence package.
+8. Run the Random Forest pipeline; it consumes the raw contract, not `joined_sales_data.csv`.
+
+Recommended files to preserve locally or on shared storage:
+
+- `data/raw/` — original snapshot.
+- `data/processed/clean_sales_transactions.csv` — reusable Silver transaction data.
+- `data/processed/sku_week_ground_truth_provisional.csv` — reusable Gold ground truth.
+- `reports/tables/` — validation, quality and provenance reports.
+- `reports/random_forest/` — model experiments and metrics.
+
+No need to rerun notebook 01–02 or regenerate every table if the preserved
+checkpoints above are still valid and their source snapshot is unchanged.
+
 Run from the repository root (quote the path containing a space):
 
 ```bash
