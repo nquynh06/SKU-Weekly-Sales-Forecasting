@@ -1,0 +1,11 @@
+# Never push local test CSVs or heavy model artifacts to GitHub (Spec Rule 14.4)
+input_data/*
+!input_data/.gitkeep
+!input_data/README.txt
+
+outputs/*
+!outputs/.gitkeep
+
+__pycache__/
+*.py[cod]
+.pytest_cache/

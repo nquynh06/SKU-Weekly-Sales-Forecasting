@@ -1,0 +1,99 @@
+{
+  "experiment": {
+    "dataset_version": "D0",
+    "feature_version": "v1.0",
+    "model_name": "HistGradientBoosting",
+    "seed": 42
+  },
+  "data": {
+    "start_week": "2023-07-03",
+    "end_week": "2025-12-22",
+    "sku_col": "SKU_ID",
+    "date_col": "Forecast_Week",
+    "qty_col": "Actual_Quantity",
+    "label_status_col": "label_status",
+    "stockout_flag_col": "stockout_flag",
+    "fill_missing_weeks_as_zero_for_csv": false,
+    "history_start": null,
+    "history_end": null,
+    "history_weeks": null,
+    "min_history_weeks": 8
+  },
+  "split": {
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15,
+    "gap_weeks": 0
+  },
+  "features": {
+    "lags": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "rolling_windows": [
+      4,
+      8
+    ],
+    "categorical_cols": [
+      "category",
+      "subcategory",
+      "brand"
+    ],
+    "optional_numeric_cols": [
+      "avg_price",
+      "discount_rate",
+      "promo_flag"
+    ]
+  },
+  "model": {
+    "target_transform": "log1p",
+    "tune_hyperparameters": true,
+    "default_params": {
+      "loss": "squared_error",
+      "learning_rate": 0.05,
+      "max_iter": 300,
+      "max_leaf_nodes": 31,
+      "max_depth": null,
+      "min_samples_leaf": 30,
+      "l2_regularization": 1.0,
+      "max_bins": 255,
+      "early_stopping": false
+    },
+    "tuning_grid": {
+      "loss": [
+        "squared_error",
+        "absolute_error",
+        "poisson"
+      ],
+      "learning_rate": [
+        0.03,
+        0.05,
+        0.1
+      ],
+      "max_leaf_nodes": [
+        15,
+        31
+      ],
+      "min_samples_leaf": [
+        20,
+        50
+      ],
+      "l2_regularization": [
+        0.5,
+        2.0
+      ]
+    }
+  },
+  "forecast": {
+    "forecast_days": 28,
+    "demand_scale": 1.0,
+    "selected_skus": []
+  },
+  "output": {
+    "save_plots": true,
+    "compute_permutation_importance": true,
+    "permutation_repeats": 5
+  }
+}
